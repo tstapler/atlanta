@@ -11,15 +11,7 @@ config :atlanta, AtlantaWeb.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [
-    node: [
-      "node_modules/webpack/bin/webpack.js",
-      "--mode",
-      "development",
-      "--watch-stdin",
-      cd: Path.expand("../assets", __DIR__)
-    ]
-  ]
+  watchers: []
 
 # ## SSL Support
 #
@@ -65,11 +57,3 @@ config :phoenix, :stacktrace_depth, 20
 
 # Initialize plugs at runtime for faster development compilation
 config :phoenix, :plug_init_mode, :runtime
-
-# Configure your database
-config :atlanta, Atlanta.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "atlanta_dev",
-  hostname: "localhost",
-  pool_size: 10

@@ -40,7 +40,7 @@ defmodule AtlantaWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_atlanta_key",
-    signing_salt: "XJE0ulJP"
+    signing_salt: "ouHp1Poi"
 
   plug AtlantaWeb.Router
 end

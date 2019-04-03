@@ -7,13 +7,10 @@
 # General application configuration
 use Mix.Config
 
-config :atlanta,
-  ecto_repos: [Atlanta.Repo]
-
 # Configures the endpoint
 config :atlanta, AtlantaWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "Uy55M/8JEaTpOmHkXdCzm2MB2VyymDejmfaQvMf5dGiFUozBMeERQJQuWzX8DVwq",
+  secret_key_base: "8L2RDm5Gz8cSHDT0KT8yOrEHlZzC09XtpSEW4xkdqS2F1ktw7zWP3AY3NvPz5Bhp",
   render_errors: [view: AtlantaWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Atlanta.PubSub, adapter: Phoenix.PubSub.PG2]
 

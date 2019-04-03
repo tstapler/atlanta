@@ -8,11 +8,3 @@ config :atlanta, AtlantaWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
-# Configure your database
-config :atlanta, Atlanta.Repo,
-  username: "postgres",
-  password: "postgres",
-  database: "atlanta_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
