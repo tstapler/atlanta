@@ -1,4 +1,5 @@
-# Atlanta
+![Atlanta](https://vignette.wikia.nocookie.net/logopedia/images/c/cf/Atlanta-tv-logo.png/revision/latest?cb=20160908231204)
+
 A poor man's [Atlantis](https://github.com/runatlantis/atlantis).
 
 Atlantis is pretty opinionated about what your terraform workflow should be, Atlanta is not.
@@ -17,10 +18,9 @@ To start your Phoenix server:
 Now you can visit [`localhost:4000`](http://localhost:4000) from your brow
 ser.
 
-Ready to run in production? Please [check our deployment guides](https://h
-exdocs.pm/phoenix/deployment.html).
+Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+## Learn more about Phoenix
 
   * Official website: http://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
