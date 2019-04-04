@@ -1,12 +1,12 @@
-require System
+require Porcelain
 
 defmodule Atlanta.TFApply do
-  use Que.Worker
+  use Que.Worker, concurrency: 4
 
   def perform(_payload) do
     :timer.sleep(:timer.seconds(10))
     IO.puts("HI")
-    IO.puts(elem(System.cmd("echo", ["hi"]), 0))
+    IO.puts(Porcelain.shell("echo whatss good").out)
   end
 
   def on_success(_payload) do

@@ -15,8 +15,12 @@ defmodule AtlantaWeb.Router do
 
   scope "/", AtlantaWeb do
     pipe_through :browser
-
     get "/", PageController, :index
+  end
+
+  scope "/api/v1", AtlantaWeb do
+    pipe_through :api
+    put "/apply", TFController, :apply
   end
 
   # Other scopes may use custom stacks.

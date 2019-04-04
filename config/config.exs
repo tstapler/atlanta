@@ -14,6 +14,8 @@ config :atlanta, AtlantaWeb.Endpoint,
   render_errors: [view: AtlantaWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Atlanta.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :porcelain, driver: Porcelain.Driver.Basic
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
