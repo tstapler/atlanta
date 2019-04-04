@@ -44,6 +44,7 @@ config :atlanta, AtlantaWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/atlanta_web/{live,views}/.*(ex)$",
+      ~r"lib/atlanta/.*(ex)$",
       ~r"lib/atlanta_web/templates/.*(eex)$"
     ]
   ]
